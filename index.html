@@ -3,21 +3,38 @@
 <head>
 
 	<title>
-		JS sum
+		JS playground
 	</title>
-	<script type="text/javascript" src="main.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<form autocomplete="off">
-	<input type="text" id="numa" placeholder="Input a"><br><br>
-	<input type="text" id="numb" placeholder="Input b">
-	<br>
-	<br>
-	<button onclick="sum()" type="button">Calculate</button>
-</form>
+	<div class="container">
+		<form autocomplete="off">
+			<input type="text" id="numa" placeholder="Input a"><br><br>
+			<input type="text" id="numb" placeholder="Input b">
+			<br>
+			<br>
+			<button onclick="sum()" type="button">Calculate sum</button>
+		</form>
 
-<h1 id="result"></h1>
+		<h1 id="result"></h1>
+	</div>
+
+	
+	<div class="container">
+		<div id="road">
+			<img src="img/car.png" id="car">
+		</div>
+
+		<br>
+		<br>
+
+		<button onclick="carMove()" type="button">Go!</button>
+	</div>
+	<script type="text/javascript" src="./main.js"></script>
 
 </body>
 </html>
