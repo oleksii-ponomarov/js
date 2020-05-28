@@ -4,11 +4,12 @@ function sum() {
 
 	var result=parseFloat(a)+parseFloat(b);
 
-	if(!isNaN(result)) {
-	document.getElementById("result").innerHTML="The answer is "+result;
-	} else {
+	if(isNaN(result)) {
 		document.getElementById("result").innerHTML="Enter two numbers";
+		return
 	}
+	
+	document.getElementById("result").innerHTML="The answer is "+result;
 }
 
 function carMove() {
